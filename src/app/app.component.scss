@@ -1,0 +1,32 @@
+body{
+    background-color: #e0e0e0;
+}
+
+body, *{
+    font-family: 'Economica', sans-serif;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+img.img-small{
+    width: 100px;
+}
+
+.mat-tab-body-content{
+    padding-top: 20px;
+}
+
+ul{
+    padding-left: 0;
+    li{
+        list-style: none;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .fill{
+        height: 100vh;
+    }
+}

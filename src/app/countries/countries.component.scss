@@ -1,0 +1,61 @@
+svg{
+    max-height: 100%;
+    max-width: 100%;
+
+    g{
+        &:focus, &:active{
+            outline: none;
+        }
+        &.cls-3, &.cls-4, &.cls-5, &.cls-7,&.cls-8{
+            &:hover{
+                cursor: pointer;
+            }
+        }
+
+        path{
+            &:focus, &:active{
+                outline: none;
+            }
+        }
+    }
+
+    .cls-1{
+        fill:#abd6f0;
+    }
+    .cls-2{
+        fill:none;
+    }
+    .cls-3{
+        fill:#5a4594;
+        &:hover{
+            fill: lighten(#5a4594, 15%);
+        }
+    }
+    .cls-4{
+        fill:#e95e0b;
+        &:hover{
+            fill: lighten(#e95e0b, 15%);
+        }
+    }
+    .cls-5{fill:#f7a916;
+        &:hover{
+            fill: lighten(#f7a916, 15%);
+        }}
+    .cls-6{fill:#e0e0e0;}
+    .cls-7{fill:#50b691;
+        &:hover{
+            fill: lighten(#50b691, 15%);
+        }}
+    .cls-8{fill:#d10f42;
+        &:hover{
+            fill: lighten(#d10f42, 15%);
+        }}
+    .cls-9{fill:#fff;}
+}
+
+@media screen and (min-width: 992px) {
+    svg{
+        height: 100vh;
+        max-width: 100vw;
+    }
+}

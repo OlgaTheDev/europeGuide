@@ -1,0 +1,36 @@
+<h2>{{country.name | titlecase}}</h2>
+
+<mat-tab-group>
+    <mat-tab label="Main info">
+      <ul>
+        <li><span class="bold">Capital:</span> {{country.shortInfo.capital}}</li>
+        <li><span class="bold">Currency:</span> {{country.shortInfo.currency}}</li>
+        <li><span class="bold">Languages:</span> {{country.shortInfo.lang}}</li>
+        <li><span class="bold">Population:</span> {{country.shortInfo.population | number}}</li>
+        <li><p class="bold">Flag:</p> <img class="img-small" src="{{country.shortInfo.flag}}" alt="flag"></li>
+      </ul>
+
+        <p>{{country.info}}</p>
+    </mat-tab>
+
+    <mat-tab label="Explore the country">
+        <mat-progress-bar *ngIf="imagesLoading"
+        mode="indeterminate">
+      </mat-progress-bar>
+      
+      <mat-grid-list *ngIf="!imagesLoading" cols="2" rowHeight="2:1">
+        <mat-grid-tile *ngFor="let image of country.images">
+          <img [src]="image" alt="country.name">
+        </mat-grid-tile>
+      </mat-grid-list>
+    </mat-tab>
+
+</mat-tab-group>
+
+
+
+
+
+
+
+
