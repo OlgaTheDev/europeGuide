@@ -5,7 +5,7 @@ import { CountryDetailsComponent } from "./countries/country-details/country-det
 import { StartComponent } from "./countries/start/start.component";
 
 const routes: Routes = [
-    { path: 'countries', component: CountriesComponent, children: [
+    { path: '/countries', component: CountriesComponent, children: [
         {path: '', component: StartComponent, pathMatch: 'full'},
         {path: ':name', component: CountryDetailsComponent}]
     },

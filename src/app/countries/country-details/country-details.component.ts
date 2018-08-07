@@ -53,7 +53,7 @@ export class CountryDetailsComponent implements OnInit {
         (data: any) => {          
           this.country.images = [];  
           data.results.forEach(element => {
-            this.country.images.push(element.urls.small)
+            this.country.images.push(element.urls.regular)
           });
         },
         error => console.log(error),
